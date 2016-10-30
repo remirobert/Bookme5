@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="DetailLocationTableViewCell" customModule="BookMe5iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="159"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyL-Wi-Ds6">
+                        <rect key="frame" x="51" y="8" width="328" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Uov-K4-d3Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.6705882353" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5i-BX-MD3">
+                        <rect key="frame" x="8" y="8" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="SBz-qW-QeL"/>
+                            <constraint firstAttribute="height" constant="35" id="vHS-q4-SGH"/>
+                        </constraints>
+                        <color key="tintColor" red="0.96078431369999995" green="0.6705882353" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="localisation"/>
+                    </button>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vdb-ud-LUu">
+                        <rect key="frame" x="0.0" y="51" width="399" height="109"/>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p5i-BX-MD3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="1W8-TM-vcM"/>
+                    <constraint firstItem="p5i-BX-MD3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8cd-bA-F4J"/>
+                    <constraint firstItem="vyL-Wi-Ds6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Dw9-a7-SYh"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Vdb-ud-LUu" secondAttribute="trailing" constant="-8" id="MMn-CU-vUN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vyL-Wi-Ds6" secondAttribute="trailing" constant="12" id="RLG-jZ-3q3"/>
+                    <constraint firstItem="Vdb-ud-LUu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="d19-9D-0mi"/>
+                    <constraint firstItem="Vdb-ud-LUu" firstAttribute="top" secondItem="p5i-BX-MD3" secondAttribute="bottom" constant="8" id="eJN-OT-mmw"/>
+                    <constraint firstItem="vyL-Wi-Ds6" firstAttribute="leading" secondItem="p5i-BX-MD3" secondAttribute="trailing" constant="8" id="vtm-Ny-5cu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Vdb-ud-LUu" secondAttribute="bottom" constant="-9" id="wKQ-gI-q3C"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelAdress" destination="vyL-Wi-Ds6" id="Jh1-3U-ho7"/>
+                <outlet property="mapPreview" destination="Vdb-ud-LUu" id="lX3-43-EpK"/>
+            </connections>
+            <point key="canvasLocation" x="344.5" y="268"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="localisation" width="35" height="35"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="DetailBookingDetailTableViewCell" customModule="BookMe5iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXt-Cb-MPC">
+                        <rect key="frame" x="8" y="8" width="304" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Z0R-Kh-rGi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.6588235294" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCt-1W-DRM">
+                        <rect key="frame" x="8" y="51" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2w5-Ud-46I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocq-73-t3H">
+                        <rect key="frame" x="8" y="80" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CeZ-YY-x9v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-rc-0Rf">
+                        <rect key="frame" x="0.0" y="118" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="M6O-K3-ERt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="8G9-rc-0Rf" secondAttribute="bottom" constant="-8" id="3KE-4S-itt"/>
+                    <constraint firstItem="tCt-1W-DRM" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5ah-13-EzA"/>
+                    <constraint firstItem="ocq-73-t3H" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="8Oi-Fc-MiV"/>
+                    <constraint firstItem="PXt-Cb-MPC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9ME-jc-kpR"/>
+                    <constraint firstItem="8G9-rc-0Rf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="OAF-Sq-z0m"/>
+                    <constraint firstItem="tCt-1W-DRM" firstAttribute="top" secondItem="PXt-Cb-MPC" secondAttribute="bottom" constant="8" id="Rua-TI-RW3"/>
+                    <constraint firstItem="ocq-73-t3H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ea8-6r-6df"/>
+                    <constraint firstItem="ocq-73-t3H" firstAttribute="top" secondItem="tCt-1W-DRM" secondAttribute="bottom" constant="8" id="pOH-fG-bXL"/>
+                    <constraint firstItem="PXt-Cb-MPC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="q8F-Zm-Oi2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8G9-rc-0Rf" secondAttribute="trailing" constant="-8" id="uj3-Fo-7nd"/>
+                    <constraint firstItem="PXt-Cb-MPC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="wa9-NE-dSt"/>
+                    <constraint firstItem="tCt-1W-DRM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="yR3-Hm-6FH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelDate" destination="tCt-1W-DRM" id="nGK-q4-0Yn"/>
+                <outlet property="labelHours" destination="ocq-73-t3H" id="qFB-7g-03s"/>
+                <outlet property="labelTitle" destination="PXt-Cb-MPC" id="aeg-op-GYv"/>
+            </connections>
+            <point key="canvasLocation" x="215" y="468"/>
+        </tableViewCell>
+    </objects>
+</document>

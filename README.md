@@ -1,2 +1,2 @@
-# bookme5
-school project
+# Bookme5
+bookme5 iOS

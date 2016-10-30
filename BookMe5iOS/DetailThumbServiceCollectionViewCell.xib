@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailThumbServiceCollectionViewCell" customModule="BookMe5iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="202"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="202"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-4" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-ai-x39">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="202"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nlm-08-ksg">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="202"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCA-Ob-AH9">
+                                <rect key="frame" x="8" y="173" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EWj-Zd-qQe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRW-KV-mdk">
+                                <rect key="frame" x="8" y="152" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="xXp-VY-Lf4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YRW-KV-mdk" secondAttribute="trailing" constant="8" id="9Yk-lj-lWc"/>
+                            <constraint firstItem="QCA-Ob-AH9" firstAttribute="leading" secondItem="Nlm-08-ksg" secondAttribute="leading" constant="8" id="Hec-ip-lf5"/>
+                            <constraint firstAttribute="bottom" secondItem="QCA-Ob-AH9" secondAttribute="bottom" constant="8" id="PAX-rN-P41"/>
+                            <constraint firstAttribute="trailing" secondItem="QCA-Ob-AH9" secondAttribute="trailing" constant="8" id="QNF-yb-Iee"/>
+                            <constraint firstItem="QCA-Ob-AH9" firstAttribute="top" secondItem="YRW-KV-mdk" secondAttribute="bottom" id="fT9-cr-sJB"/>
+                            <constraint firstItem="YRW-KV-mdk" firstAttribute="leading" secondItem="Nlm-08-ksg" secondAttribute="leading" constant="8" id="pDd-cv-54E"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IKK-ai-x39" secondAttribute="trailing" id="Cmz-uB-k89"/>
+                <constraint firstItem="IKK-ai-x39" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EWq-RY-LnU"/>
+                <constraint firstAttribute="bottom" secondItem="Nlm-08-ksg" secondAttribute="bottom" id="EmA-ZU-la7"/>
+                <constraint firstItem="Nlm-08-ksg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yt4-yq-qIu"/>
+                <constraint firstAttribute="bottom" secondItem="IKK-ai-x39" secondAttribute="bottom" id="eS2-M3-qRA"/>
+                <constraint firstItem="IKK-ai-x39" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ooP-Jl-Kac"/>
+                <constraint firstItem="Nlm-08-ksg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yCP-F9-Tlq"/>
+                <constraint firstAttribute="trailing" secondItem="Nlm-08-ksg" secondAttribute="trailing" id="yWO-6S-8yM"/>
+            </constraints>
+            <size key="customSize" width="216" height="202"/>
+            <connections>
+                <outlet property="imageViewDetail" destination="IKK-ai-x39" id="xt5-dF-hjP"/>
+                <outlet property="labelPrice" destination="QCA-Ob-AH9" id="J39-4p-UUI"/>
+                <outlet property="labelTitle" destination="YRW-KV-mdk" id="YVH-7x-TUN"/>
+                <outlet property="viewContent" destination="Nlm-08-ksg" id="IhM-9v-KHc"/>
+            </connections>
+            <point key="canvasLocation" x="295" y="243"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="images-4" width="137" height="91"/>
+    </resources>
+</document>
