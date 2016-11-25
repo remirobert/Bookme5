@@ -34,7 +34,7 @@ enum APIBookMe5 {
 extension APIBookMe5: NetworkRequest {
     
     func baseUrl() -> String {
-        return "http://127.0.0.1:4242/api"
+        return "https://api.bookme5.com/api"
     }
     
     func parameters() -> [String: AnyObject]? {
