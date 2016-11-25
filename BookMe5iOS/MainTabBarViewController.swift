@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SocketIO
 
 class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
-    
+        
     func tabBarController(tabBarController: UITabBarController, shouldSelectViewController viewController: UIViewController) -> Bool {
         if viewController is MessageViewController {
             if let _ = TokenAccess.accessToken {
@@ -24,6 +25,11 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        socket.connect()
+        socket.on("connect") {data, ack in
+            print("socket connected")
+        }
         
         self.delegate = self
         

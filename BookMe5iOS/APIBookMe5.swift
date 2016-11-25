@@ -27,13 +27,14 @@ enum APIBookMe5 {
     case GetBookMark(id: String)
     case PostStatsVisit(id: String)
     case PostStatsBook(id: String)
+    case GetGroupeMessage
     case Comment
 }
 
 extension APIBookMe5: NetworkRequest {
     
     func baseUrl() -> String {
-        return "https://api.bookme5.com/api"
+        return "http://127.0.0.1:4242/api"
     }
     
     func parameters() -> [String: AnyObject]? {
@@ -95,6 +96,8 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/statistics/\(id)/booking"
         case .PostStatsVisit(let id):
             return "\(self.baseUrl())/statistics/\(id)/visit"
+        case .GetGroupeMessage:
+            return "\(self.baseUrl())/users/group"
         case .Comment:
             return "http://private-117ddb-bookme1.apiary-mock.com/1/comments"
         }
@@ -110,6 +113,7 @@ extension APIBookMe5: NetworkRequest {
              .GetBookMarks,
              .GetReservations,
              .Comment,
+             .GetGroupeMessage,
              .FeedBusinesses:
             return .GET
         default:
@@ -134,6 +138,7 @@ extension APIBookMe5: NetworkRequest {
              .PostBookMark,
              .GetReservations,
              .PostStatsBook,
+             .GetGroupeMessage,
              .FeedBusinesses:
             return authHeader
         default:

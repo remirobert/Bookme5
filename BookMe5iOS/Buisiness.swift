@@ -34,10 +34,9 @@ class Buisiness {
     
     init?(json: JSON) {
         guard let id = json["_id"] as? String else { return nil }
-        guard let name = json["name"] as? String else { return nil }
         
         self.id = id
-        self.name = name
+        self.name = json["name"] as? String ?? ""
         self.description = json["description"] as? String
         
         if let picturesJson = json["images"] as? [JSON] {

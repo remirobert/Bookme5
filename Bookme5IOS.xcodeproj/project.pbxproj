@@ -59,6 +59,9 @@
 		BB4238821C1923520041B45D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4238811C1923520041B45D /* ProfileViewController.swift */; };
 		BB4B82DD1D2F8E9200FE2B33 /* DetailServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B82DC1D2F8E9200FE2B33 /* DetailServiceViewController.swift */; };
 		BB4B82DF1D2F8F1C00FE2B33 /* DetailServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B82DE1D2F8F1C00FE2B33 /* DetailServiceViewModel.swift */; };
+		BB5C58821DDE1E9E00BF2A3C /* GroupMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C58811DDE1E9E00BF2A3C /* GroupMessageViewModel.swift */; };
+		BB5C58841DDE1EBA00BF2A3C /* GroupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C58831DDE1EBA00BF2A3C /* GroupMessage.swift */; };
+		BB5C58861DDE3A8700BF2A3C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C58851DDE3A8700BF2A3C /* Message.swift */; };
 		BB6336C61C56F7B4006B06C2 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6336C51C56F7B4006B06C2 /* Storyboard.swift */; };
 		BB6336C81C56FE29006B06C2 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6336C71C56FE29006B06C2 /* UIApplicationExtensions.swift */; };
 		BB6500D41C75741E00A45025 /* DetailBuisinessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6500D31C75741E00A45025 /* DetailBuisinessViewModel.swift */; };
@@ -81,12 +84,16 @@
 		BB9651371D57257100A3F83E /* ServiceDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9651351D57257100A3F83E /* ServiceDescriptionTableViewCell.swift */; };
 		BB9651381D57257100A3F83E /* ServiceDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB9651361D57257100A3F83E /* ServiceDescriptionTableViewCell.xib */; };
 		BBA0ECFB1C2A96CE006CD9D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBA0ECFA1C2A96CE006CD9D6 /* GoogleService-Info.plist */; };
+		BBA1471A1DDFABE300D849D3 /* DetailMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA147191DDFABE300D849D3 /* DetailMessageViewController.swift */; };
+		BBA1471C1DDFABF000D849D3 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1471B1DDFABF000D849D3 /* MessageViewModel.swift */; };
 		BBA1ED861D440D6300F79116 /* BookCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1ED851D440D6300F79116 /* BookCalendarViewController.swift */; };
 		BBA1ED881D440D6F00F79116 /* BookCalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1ED871D440D6F00F79116 /* BookCalendarViewModel.swift */; };
 		BBA1ED8B1D44126F00F79116 /* BookSlotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1ED891D44126F00F79116 /* BookSlotTableViewCell.swift */; };
 		BBA1ED8C1D44126F00F79116 /* BookSlotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA1ED8A1D44126F00F79116 /* BookSlotTableViewCell.xib */; };
 		BBA1ED8E1D44B01300F79116 /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1ED8D1D44B01300F79116 /* DetailBookViewController.swift */; };
 		BBA1ED901D44B02000F79116 /* DetailBookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA1ED8F1D44B02000F79116 /* DetailBookViewModel.swift */; };
+		BBAF69981DDE484C00FC1C4B /* GroupMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAF69961DDE484C00FC1C4B /* GroupMessageTableViewCell.swift */; };
+		BBAF69991DDE484C00FC1C4B /* GroupMessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBAF69971DDE484C00FC1C4B /* GroupMessageTableViewCell.xib */; };
 		BBB69BB31DC51D7A00D386D8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB69BB21DC51D7A00D386D8 /* Comment.swift */; };
 		BBB69BB61DC5284600D386D8 /* CommentCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB69BB41DC5284600D386D8 /* CommentCellTableViewCell.swift */; };
 		BBB69BB71DC5284600D386D8 /* CommentCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBB69BB51DC5284600D386D8 /* CommentCellTableViewCell.xib */; };
@@ -202,6 +209,9 @@
 		BB4238811C1923520041B45D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BB4B82DC1D2F8E9200FE2B33 /* DetailServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailServiceViewController.swift; sourceTree = "<group>"; };
 		BB4B82DE1D2F8F1C00FE2B33 /* DetailServiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailServiceViewModel.swift; sourceTree = "<group>"; };
+		BB5C58811DDE1E9E00BF2A3C /* GroupMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMessageViewModel.swift; sourceTree = "<group>"; };
+		BB5C58831DDE1EBA00BF2A3C /* GroupMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMessage.swift; sourceTree = "<group>"; };
+		BB5C58851DDE3A8700BF2A3C /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BB6336C51C56F7B4006B06C2 /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		BB6336C71C56FE29006B06C2 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
 		BB6500D31C75741E00A45025 /* DetailBuisinessViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBuisinessViewModel.swift; sourceTree = "<group>"; };
@@ -225,12 +235,16 @@
 		BB9651361D57257100A3F83E /* ServiceDescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceDescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		BBA0ECF91C2A9237006CD9D6 /* bridgingFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridgingFile.h; sourceTree = "<group>"; };
 		BBA0ECFA1C2A96CE006CD9D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BBA147191DDFABE300D849D3 /* DetailMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailMessageViewController.swift; sourceTree = "<group>"; };
+		BBA1471B1DDFABF000D849D3 /* MessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		BBA1ED851D440D6300F79116 /* BookCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCalendarViewController.swift; sourceTree = "<group>"; };
 		BBA1ED871D440D6F00F79116 /* BookCalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCalendarViewModel.swift; sourceTree = "<group>"; };
 		BBA1ED891D44126F00F79116 /* BookSlotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSlotTableViewCell.swift; sourceTree = "<group>"; };
 		BBA1ED8A1D44126F00F79116 /* BookSlotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookSlotTableViewCell.xib; sourceTree = "<group>"; };
 		BBA1ED8D1D44B01300F79116 /* DetailBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
 		BBA1ED8F1D44B02000F79116 /* DetailBookViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailBookViewModel.swift; sourceTree = "<group>"; };
+		BBAF69961DDE484C00FC1C4B /* GroupMessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMessageTableViewCell.swift; sourceTree = "<group>"; };
+		BBAF69971DDE484C00FC1C4B /* GroupMessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupMessageTableViewCell.xib; sourceTree = "<group>"; };
 		BBB69BB21DC51D7A00D386D8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		BBB69BB41DC5284600D386D8 /* CommentCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCellTableViewCell.swift; sourceTree = "<group>"; };
 		BBB69BB51DC5284600D386D8 /* CommentCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCellTableViewCell.xib; sourceTree = "<group>"; };
@@ -348,6 +362,8 @@
 				BBC428CE1D7DFDB2005C9FDA /* BookmarkListTableViewCell.swift */,
 				BBB69BB41DC5284600D386D8 /* CommentCellTableViewCell.swift */,
 				BBB69BB51DC5284600D386D8 /* CommentCellTableViewCell.xib */,
+				BBAF69961DDE484C00FC1C4B /* GroupMessageTableViewCell.swift */,
+				BBAF69971DDE484C00FC1C4B /* GroupMessageTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -462,6 +478,8 @@
 				BBFDAE3C1D6A2D72004D4560 /* Reservation.swift */,
 				BBC428CB1D7DFC45005C9FDA /* Bookmark.swift */,
 				BBB69BB21DC51D7A00D386D8 /* Comment.swift */,
+				BB5C58831DDE1EBA00BF2A3C /* GroupMessage.swift */,
+				BB5C58851DDE3A8700BF2A3C /* Message.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -496,6 +514,7 @@
 				BBA1ED8D1D44B01300F79116 /* DetailBookViewController.swift */,
 				BBCB980A1D6CDF3B000EB8DD /* DetailReservationViewController.swift */,
 				BBB7073D1DC65FD00063222A /* CommentViewController.swift */,
+				BBA147191DDFABE300D849D3 /* DetailMessageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -552,6 +571,8 @@
 				BBA1ED8F1D44B02000F79116 /* DetailBookViewModel.swift */,
 				BBCB980C1D6CDF69000EB8DD /* DetailReservationViewModel.swift */,
 				BBC428C51D7DF927005C9FDA /* NotificationViewModel.swift */,
+				BB5C58811DDE1E9E00BF2A3C /* GroupMessageViewModel.swift */,
+				BBA1471B1DDFABF000D849D3 /* MessageViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -701,6 +722,7 @@
 				BB41ADA11D57A474002067C5 /* DetailBookingLocationTableViewCell.xib in Resources */,
 				BB0E12E91CBBF9CD006602FE /* DetailThumbServiceCollectionViewCell.xib in Resources */,
 				BB2222B41D3BDD9500CCE50D /* SearchResultTableViewCell.xib in Resources */,
+				BBAF69991DDE484C00FC1C4B /* GroupMessageTableViewCell.xib in Resources */,
 				BB09E6E61D2F757800BF5707 /* HeaderServicesTableViewCell.xib in Resources */,
 				BB7837331CBC838A00362518 /* SearchCategoriesTableViewCell.xib in Resources */,
 				BBF7F1841D6B911A00C64C8C /* ProfileInfoTableViewCell.xib in Resources */,
@@ -810,6 +832,7 @@
 				BB9651331D57256500A3F83E /* ServiceInfoTableViewCell.swift in Sources */,
 				BBB9BE171D81D40A00469808 /* LabelSize.swift in Sources */,
 				BB0E12E81CBBF9CD006602FE /* DetailThumbServiceCollectionViewCell.swift in Sources */,
+				BB5C58861DDE3A8700BF2A3C /* Message.swift in Sources */,
 				BBF143F41C5605B900A5C523 /* APIUser.swift in Sources */,
 				BB3617D11D29626300D7519B /* DescriptionTableViewCell.swift in Sources */,
 				BB0F25511C58879A0054D345 /* Buisiness.swift in Sources */,
@@ -826,6 +849,7 @@
 				BBCE5A041CBA014100AA5BAD /* APIBookMe5.swift in Sources */,
 				BB0E12E41CBBF79C006602FE /* BookCollectionTableViewCell.swift in Sources */,
 				BB41ADA01D57A474002067C5 /* DetailBookingLocationTableViewCell.swift in Sources */,
+				BBAF69981DDE484C00FC1C4B /* GroupMessageTableViewCell.swift in Sources */,
 				BBB69BB61DC5284600D386D8 /* CommentCellTableViewCell.swift in Sources */,
 				BB290B951C1476980036E04E /* FacebookProvider.swift in Sources */,
 				BB7A85011C59D5780079F656 /* SignupViewModel.swift in Sources */,
@@ -842,7 +866,9 @@
 				BB41AD981D5741F8002067C5 /* LocationManager.swift in Sources */,
 				BB208B581CBB74A7005FAC8D /* DetailLocationCellModel.swift in Sources */,
 				BB4238821C1923520041B45D /* ProfileViewController.swift in Sources */,
+				BBA1471A1DDFABE300D849D3 /* DetailMessageViewController.swift in Sources */,
 				BB0F254A1C5886460054D345 /* FeedListViewModel.swift in Sources */,
+				BB5C58821DDE1E9E00BF2A3C /* GroupMessageViewModel.swift in Sources */,
 				BBB7073E1DC65FD00063222A /* CommentViewController.swift in Sources */,
 				BBA1ED901D44B02000F79116 /* DetailBookViewModel.swift in Sources */,
 				BB6336C81C56FE29006B06C2 /* UIApplicationExtensions.swift in Sources */,
@@ -854,6 +880,7 @@
 				BBF7F17E1D6B8DB000C64C8C /* DetailBookingImageTableViewCell.swift in Sources */,
 				BB3617D91D29723100D7519B /* HeaderServicesTableViewCell.swift in Sources */,
 				BBF143EB1C559F8700A5C523 /* LoginViewModel.swift in Sources */,
+				BB5C58841DDE1EBA00BF2A3C /* GroupMessage.swift in Sources */,
 				BBF7F1831D6B911A00C64C8C /* ProfileInfoTableViewCell.swift in Sources */,
 				BBC428CC1D7DFC45005C9FDA /* Bookmark.swift in Sources */,
 				BB0F25481C5886390054D345 /* FeedListViewController.swift in Sources */,
@@ -863,6 +890,7 @@
 				BB41AD9C1D57A2BD002067C5 /* DetailBookingDetailTableViewCell.swift in Sources */,
 				BB3617D51D296E1400D7519B /* PictureDetailTableViewCell.swift in Sources */,
 				BBA1ED881D440D6F00F79116 /* BookCalendarViewModel.swift in Sources */,
+				BBA1471C1DDFABF000D849D3 /* MessageViewModel.swift in Sources */,
 				BBC5704C1D2F8545003D5CDC /* Service.swift in Sources */,
 				BB4238801C1921720041B45D /* User.swift in Sources */,
 				BB6500D41C75741E00A45025 /* DetailBuisinessViewModel.swift in Sources */,

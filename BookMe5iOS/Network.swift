@@ -57,8 +57,6 @@ class Network {
     private static func handleJSONResponse(request: Request, observer: AnyObserver<JSON?>) {
         request.validate().responseJSON(completionHandler: { (response: Response<AnyObject, NSError>) -> Void in
             
-            print("response : \(response)")
-            
             switch response.result {
             case .Success(let value):
                 

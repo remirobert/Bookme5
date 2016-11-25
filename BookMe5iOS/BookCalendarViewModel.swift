@@ -90,7 +90,6 @@ class BookCalendarViewModel {
         Network.send(request: request).subscribe { (event) in
             switch event {
             case .Next(let response):
-                print("response : \(response)")
                 var unavailabilitySlots = [UnavailabilitySlot]()
                 if let response = response?["unavailability"] as? [JSON] {
                     unavailabilitySlots = self.generateUnavailabilitySlots(response, date: date)

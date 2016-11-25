@@ -42,6 +42,9 @@ PODS:
     - GoogleSymbolUtilities (~> 1.0)
   - Hakuba (2.0.3)
   - IQKeyboardManagerSwift (4.0.5)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - JVFloatLabeledTextField (1.1.1)
   - LGAlertView (2.0.13)
   - PINCache (2.3)
@@ -66,6 +69,7 @@ PODS:
     - RxSwift (~> 2.5)
   - RxSwift (2.6.0)
   - SnapKit (0.22.0)
+  - Socket.IO-Client-Swift (7.0.3)
   - SwiftMoment (0.5.1)
   - SwiftNotificationCenter (1.0.0)
   - TZStackView (1.2.0)
@@ -80,6 +84,7 @@ DEPENDENCIES:
   - Google/SignIn
   - Hakuba (~> 2.0.3)
   - IQKeyboardManagerSwift (= 4.0.5)
+  - JSQMessagesViewController
   - JVFloatLabeledTextField
   - LGAlertView
   - PINRemoteImage
@@ -90,6 +95,7 @@ DEPENDENCIES:
   - RxCocoa
   - RxSwift
   - SnapKit
+  - Socket.IO-Client-Swift (~> 7.0.3)
   - SwiftMoment
   - SwiftNotificationCenter (~> 1.0.0)
   - Valet
@@ -114,6 +120,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   Hakuba: 59b87bbaf5c93e838ac8af8cf5d057f16a1213df
   IQKeyboardManagerSwift: 41fd3a45a2cdb2a0e031af697708a95b865068a1
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   JVFloatLabeledTextField: 0e5524b097f102036214dd8279edc8ecf08b5e18
   LGAlertView: 9a5dcbf4f81b02b718083539d7f222280adc9547
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
@@ -126,12 +134,13 @@ SPEC CHECKSUMS:
   RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
   RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
+  Socket.IO-Client-Swift: cca640f81f8856278c8bcd56ea42d1d070a011b6
   SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
   SwiftNotificationCenter: 1216530054e23f8b50d45a09a699875fefc01cd9
   TZStackView: 4b82373b4aabe4d99adf739a34e1bc6755149272
   Valet: b16c837ed1b33586c60d3f852c3a23c2efe5c019
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: ebf796256c33298429b4faa805b3201425e74eed
+PODFILE CHECKSUM: c864ee84e1cefb3a8663d4cbedb974617c0f586b
 
 COCOAPODS: 1.1.0.rc.2

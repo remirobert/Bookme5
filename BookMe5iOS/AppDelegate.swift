@@ -9,6 +9,14 @@
 import UIKit
 import FBSDKCoreKit
 import IQKeyboardManagerSwift
+import SocketIO
+
+let socket = SocketIOClient(socketURL: NSURL(string: "http://127.0.0.1:3000")!, config: [
+    .Log(true),
+    .Reconnects(true),
+    .ForcePolling(true),
+    .ExtraHeaders(["auth_token":  TokenAccess.accessToken ?? "notoken"])
+    ])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

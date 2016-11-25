@@ -23,5 +23,7 @@ pod 'SwiftMoment'
 pod 'RealmSwift'
 pod 'PopupDialog'
 pod 'IQKeyboardManagerSwift', '4.0.5'
+pod 'Socket.IO-Client-Swift', '~> 7.0.3'
+pod 'JSQMessagesViewController'
 
 end

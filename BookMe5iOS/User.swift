@@ -12,6 +12,7 @@ import RxSwift
 
 class User {
     
+    var id: String?
     var firstName: String!
     var lastName: String!
     var pictureProfileUrl: String?
@@ -34,6 +35,7 @@ class User {
         guard let lastName = info["lastname"] as? String else { return nil }
         let pictureUrl = info["pictureProfileUrl"] as? String
         
+        User.sharedInstance.id = json["user_id"] as? String ?? ""
         User.sharedInstance.email = json["email"] as? String
         User.sharedInstance.firstName = firstName
         User.sharedInstance.lastName = lastName
