@@ -10,12 +10,12 @@ import UIKit
 import MapKit
 
 class PointMapModel: NSObject, MKAnnotation {
-    
+
     var title: String?
     var subtitle: String?
     let buisiness: Buisiness
     var coordinate: CLLocationCoordinate2D
-    
+
     init(buisiness: Buisiness) {
         self.buisiness = buisiness
         self.title = buisiness.name
@@ -24,10 +24,10 @@ class PointMapModel: NSObject, MKAnnotation {
     }
 }
 
-class MapViewServices: UIView {
-    
+class MapViewServices: UIView, MKMapViewDelegate {
+
     @IBOutlet weak var mapview: MKMapView!
-    
+
     private var points: [PointMapModel]? {
         didSet {
             guard let points = self.points else {
@@ -36,8 +36,30 @@ class MapViewServices: UIView {
             self.mapview.addAnnotations(points)
         }
     }
-    
+
     func configure(datas: [Buisiness]) {
         self.points = datas.map { PointMapModel(buisiness: $0) }
+    }
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.mapview.delegate = self
+    }
+
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil
+        }
+        let pinView: MKAnnotationView?
+
+        if let view = self.mapview.dequeueReusableAnnotationViewWithIdentifier("cell") {
+            pinView = view
+        }
+        else {
+            pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: "cell")
+        }
+        pinView?.canShowCallout = false
+        pinView?.image = UIImage(named: "pin")
+        return pinView
     }
 }

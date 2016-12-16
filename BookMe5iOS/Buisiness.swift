@@ -16,8 +16,11 @@ struct BuisinessLocation {
     
     init(json: JSON) {
         self.addr = json["addr"] as? String
-        self.lat = json["lat"] as? Double
-        self.lon = json["lon"] as? Double
+        guard let geo = json["geo"] as? JSON else {
+            return
+        }
+        self.lat = geo["lat"] as? Double
+        self.lon = geo["lon"] as? Double
     }
 }
 

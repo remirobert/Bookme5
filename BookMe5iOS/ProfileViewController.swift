@@ -34,6 +34,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var labelEmail: UILabel!
     @IBOutlet weak var imageViewProfile: UIImageView!
     @IBOutlet weak var segmentReservations: UISegmentedControl!
+    @IBOutlet weak var imageBackgound: UIImageView!
     
     private func displayEditionProfile(property: ProfileProperty, content: String?) -> Observable<String> {
         return Observable.create({ observer in
@@ -125,7 +126,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        self.imageBackgound.clipsToBounds = true
         self.tableview.tableFooterView = UIView()
         self.tableview.separatorStyle = .None
         self.hakuba = Hakuba(tableView: self.tableview)
@@ -228,7 +230,9 @@ extension ProfileViewController {
         self.labelName.text = "\(model.user.firstName) \(model.user.lastName)"
         self.labelEmail.text = model.user.email
         self.imageViewProfile.pin_setImageFromURL(NSURL(string: model.user.pictureProfileUrl ?? ""))
-        
+        self.imageBackgound.pin_setImageFromURL(NSURL(string: model.user.pictureProfileUrl ?? ""))
+
+
         self.tableview.reloadData()
     }
     

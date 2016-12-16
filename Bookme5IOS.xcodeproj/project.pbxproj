@@ -38,6 +38,8 @@
 		BB290B951C1476980036E04E /* FacebookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B921C1476980036E04E /* FacebookProvider.swift */; };
 		BB290B961C1476980036E04E /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B931C1476980036E04E /* LoginProvider.swift */; };
 		BB290B991C14866A0036E04E /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B981C14866A0036E04E /* GoogleProvider.swift */; };
+		BB3372F91E0446A900A5D49C /* DetailProfilInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3372F81E0446A800A5D49C /* DetailProfilInformationView.swift */; };
+		BB3372FB1E0446E400A5D49C /* DetailProfilInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3372FA1E0446E400A5D49C /* DetailProfilInformationView.xib */; };
 		BB3617D11D29626300D7519B /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3617CF1D29626300D7519B /* DescriptionTableViewCell.swift */; };
 		BB3617D21D29626300D7519B /* DescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB3617D01D29626300D7519B /* DescriptionTableViewCell.xib */; };
 		BB3617D51D296E1400D7519B /* PictureDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3617D31D296E1400D7519B /* PictureDetailTableViewCell.swift */; };
@@ -188,6 +190,8 @@
 		BB290B921C1476980036E04E /* FacebookProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProvider.swift; sourceTree = "<group>"; };
 		BB290B931C1476980036E04E /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
 		BB290B981C14866A0036E04E /* GoogleProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleProvider.swift; sourceTree = "<group>"; };
+		BB3372F81E0446A800A5D49C /* DetailProfilInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProfilInformationView.swift; sourceTree = "<group>"; };
+		BB3372FA1E0446E400A5D49C /* DetailProfilInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailProfilInformationView.xib; sourceTree = "<group>"; };
 		BB3617CF1D29626300D7519B /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		BB3617D01D29626300D7519B /* DescriptionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionTableViewCell.xib; sourceTree = "<group>"; };
 		BB3617D31D296E1400D7519B /* PictureDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -586,6 +590,8 @@
 				BBF7F1861D6B913300C64C8C /* ProfileReservationTableViewCell.xib */,
 				BB672A311D7C219400C098BF /* ProfileHeaderSelector.swift */,
 				BB672A331D7C21EC00C098BF /* ProfileHeaderSelector.xib */,
+				BB3372F81E0446A800A5D49C /* DetailProfilInformationView.swift */,
+				BB3372FA1E0446E400A5D49C /* DetailProfilInformationView.xib */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -711,6 +717,7 @@
 				BB0F254F1C5886E40054D345 /* FeedListTableViewCell.xib in Resources */,
 				BBF7F17F1D6B8DB000C64C8C /* DetailBookingImageTableViewCell.xib in Resources */,
 				BBC428CF1D7DFDB2005C9FDA /* BookmarkListTableViewCell.xib in Resources */,
+				BB3372FB1E0446E400A5D49C /* DetailProfilInformationView.xib in Resources */,
 				BB290B6D1C1476690036E04E /* LaunchScreen.storyboard in Resources */,
 				BBF7F1881D6B913300C64C8C /* ProfileReservationTableViewCell.xib in Resources */,
 				BBA0ECFB1C2A96CE006CD9D6 /* GoogleService-Info.plist in Resources */,
@@ -867,6 +874,7 @@
 				BB208B581CBB74A7005FAC8D /* DetailLocationCellModel.swift in Sources */,
 				BB4238821C1923520041B45D /* ProfileViewController.swift in Sources */,
 				BBA1471A1DDFABE300D849D3 /* DetailMessageViewController.swift in Sources */,
+				BB3372F91E0446A900A5D49C /* DetailProfilInformationView.swift in Sources */,
 				BB0F254A1C5886460054D345 /* FeedListViewModel.swift in Sources */,
 				BB5C58821DDE1E9E00BF2A3C /* GroupMessageViewModel.swift in Sources */,
 				BBB7073E1DC65FD00063222A /* CommentViewController.swift in Sources */,

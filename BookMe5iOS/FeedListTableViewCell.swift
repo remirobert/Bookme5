@@ -15,7 +15,7 @@ class FeedListCellViewModel: CellModel {
     
     init(buisiness: Buisiness) {
         self.buisiness = buisiness
-        super.init(cell: FeedListTableViewCell.self, height: 231, selectionHandler: nil)
+        super.init(cell: FeedListTableViewCell.self, height: 109, selectionHandler: nil)
     }
 }
 
@@ -27,13 +27,13 @@ class FeedListTableViewCell: Cell, CellType {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var imageViewPlace: UIImageView!
-    @IBOutlet weak var viewContent: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         self.selectionStyle = .None
-        
+
+        self.imageViewPlace.backgroundColor = UIColor.lightGrayColor()
         self.imageViewPlace.layer.masksToBounds = true
         self.contentView.backgroundColor = UIColor.clearColor()
         self.contentView.backgroundColor = UIColor.clearColor()
@@ -53,6 +53,8 @@ class FeedListTableViewCell: Cell, CellType {
         
         self.labelName.text = buisiness.name
         self.labelDescription.text = buisiness.description
+
+        self.labelDescription.sizeToFit()
         
         self.imageViewPlace.image = nil
         if let pictureUrl = buisiness.pictures?.first, let url = NSURL(string: pictureUrl) {

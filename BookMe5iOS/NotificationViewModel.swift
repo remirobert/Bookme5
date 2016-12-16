@@ -23,12 +23,15 @@ class NotificationViewModel {
                 self.business.value = []
                 return
             }
-            
+
+            print("response : \(response)")
             self.business.value.removeAll()
             for json in array {
                 print("curre : \(json)")
-                if let business = Buisiness(json: json["business"] as! JSON) {
-                    self.business.value.append(FeedListCellViewModel(buisiness: business))
+                if let businessJSON = json["business"] as? JSON {
+                    if let business = Buisiness(json: businessJSON) {
+                        self.business.value.append(FeedListCellViewModel(buisiness: business))
+                    }
                 }
             }
             }.addDisposableTo(self.disposeBag)
