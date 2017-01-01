@@ -50,6 +50,17 @@ class ProfileViewModel {
             self._pictureUrl.value = pictureUrl
         }
     }
+
+    func cancelReservation(reservation: Reservation) {
+        guard let id = reservation.id else {
+            return
+        }
+
+        let request = APIBookMe5.CancelBooking(id: id)
+        Network.send(request: request, debug: true).subscribeNext { _ in
+            self.getReservationsUser()
+        }.addDisposableTo(self.disposeBag)
+    }
     
     func fetchUserInfos() {
         let request = APIBookMe5.User

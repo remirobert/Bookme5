@@ -37,7 +37,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdR-ch-G40">
-                        <rect key="frame" x="13" y="42" width="285" height="51"/>
+                        <rect key="frame" x="13" y="65" width="285" height="28"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -49,6 +49,27 @@
                             <constraint firstAttribute="height" constant="1" id="QWg-82-4fd"/>
                         </constraints>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSK-Nj-BtP" customClass="HCSStarRatingView">
+                        <rect key="frame" x="16" y="42" width="111" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.73725490199999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="111" id="7xH-yd-0cn"/>
+                            <constraint firstAttribute="height" constant="15" id="emn-iy-nYJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
@@ -59,16 +80,22 @@
                     <constraint firstItem="9l2-x3-oah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="H0M-E4-7Da"/>
                     <constraint firstItem="dOM-UJ-ZOr" firstAttribute="leading" secondItem="ZdR-ch-G40" secondAttribute="trailing" constant="8" id="LHn-p2-UZa"/>
                     <constraint firstItem="ZdR-ch-G40" firstAttribute="top" secondItem="9l2-x3-oah" secondAttribute="bottom" constant="8" id="QQN-Yb-jFI"/>
+                    <constraint firstItem="dOM-UJ-ZOr" firstAttribute="leading" secondItem="YSK-Nj-BtP" secondAttribute="trailing" constant="8" id="S29-Os-ysO"/>
                     <constraint firstItem="dtt-1I-YZ2" firstAttribute="top" secondItem="ZdR-ch-G40" secondAttribute="bottom" constant="14" id="X5a-3B-ukJ"/>
+                    <constraint firstItem="ZdR-ch-G40" firstAttribute="top" secondItem="YSK-Nj-BtP" secondAttribute="bottom" constant="8" id="XI1-KC-P2F"/>
                     <constraint firstAttribute="bottomMargin" secondItem="ZdR-ch-G40" secondAttribute="bottom" constant="7.5" id="cAO-7m-Rec"/>
                     <constraint firstItem="dOM-UJ-ZOr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="cHk-2k-5bx"/>
                     <constraint firstItem="9l2-x3-oah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="gsI-yH-IBx"/>
                     <constraint firstItem="dtt-1I-YZ2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="huD-S8-T35"/>
+                    <constraint firstItem="YSK-Nj-BtP" firstAttribute="top" secondItem="9l2-x3-oah" secondAttribute="bottom" constant="8" id="q1I-of-V1N"/>
                     <constraint firstAttribute="bottomMargin" secondItem="dtt-1I-YZ2" secondAttribute="bottom" constant="-7.5" id="vF2-lZ-Qss"/>
+                    <constraint firstItem="YSK-Nj-BtP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="yKH-rl-e0X"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
+                        <exclude reference="QQN-Yb-jFI"/>
                         <exclude reference="cAO-7m-Rec"/>
+                        <exclude reference="S29-Os-ysO"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
@@ -76,6 +103,7 @@
                 <outlet property="imageViewPlace" destination="dOM-UJ-ZOr" id="yvq-ks-sHo"/>
                 <outlet property="labelDescription" destination="ZdR-ch-G40" id="Maq-tC-0Mu"/>
                 <outlet property="labelName" destination="9l2-x3-oah" id="wp8-qK-Rj1"/>
+                <outlet property="ratingView" destination="YSK-Nj-BtP" id="N6v-OZ-gxu"/>
             </connections>
             <point key="canvasLocation" x="492" y="306.5"/>
         </tableViewCell>

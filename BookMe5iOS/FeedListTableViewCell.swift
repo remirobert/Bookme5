@@ -8,6 +8,7 @@
 
 import UIKit
 import PINRemoteImage
+import HCSStarRatingView
 import Hakuba
 
 class FeedListCellViewModel: CellModel {
@@ -27,7 +28,8 @@ class FeedListTableViewCell: Cell, CellType {
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var imageViewPlace: UIImageView!
-    
+    @IBOutlet weak var ratingView: HCSStarRatingView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -50,6 +52,8 @@ class FeedListTableViewCell: Cell, CellType {
         }
         
         let buisiness = cellmodel.buisiness
+
+        self.ratingView.value = CGFloat(buisiness.rating)
         
         self.labelName.text = buisiness.name
         self.labelDescription.text = buisiness.description

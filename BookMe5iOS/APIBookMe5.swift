@@ -29,6 +29,7 @@ enum APIBookMe5 {
     case PostStatsBook(id: String)
     case GetGroupeMessage
     case Comment
+    case CancelBooking(id: String)
 }
 
 extension APIBookMe5: NetworkRequest {
@@ -100,6 +101,8 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/users/group"
         case .Comment:
             return "http://private-117ddb-bookme1.apiary-mock.com/1/comments"
+        case .CancelBooking(let id):
+            return "\(self.baseUrl())/booking/\(id)"
         }
     }
     
@@ -116,6 +119,8 @@ extension APIBookMe5: NetworkRequest {
              .GetGroupeMessage,
              .FeedBusinesses:
             return .GET
+        case .CancelBooking:
+            return .DELETE
         default:
             return .POST
         }
@@ -139,6 +144,7 @@ extension APIBookMe5: NetworkRequest {
              .GetReservations,
              .PostStatsBook,
              .GetGroupeMessage,
+             .CancelBooking,
              .FeedBusinesses:
             return authHeader
         default:

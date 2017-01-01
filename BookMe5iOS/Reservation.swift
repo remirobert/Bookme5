@@ -15,6 +15,7 @@ class Reservation {
     var end: NSDate?
     var service: Service?
     var business: Buisiness?
+    var id: String?
     
     init?(json: JSON) {
         guard let jsonService = json["serviceId"] as? JSON else {
@@ -23,6 +24,7 @@ class Reservation {
         guard let business = json["businessId"] as? JSON else {
             return nil
         }
+        self.id = json["_id"] as? String
         self.business = Buisiness(json: business)
         self.service = Service(json: jsonService)
         guard let jsonDate = json["serviceTime"] as? JSON else {

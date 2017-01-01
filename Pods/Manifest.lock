@@ -41,6 +41,7 @@ PODS:
   - GoogleUtilities (1.3.1):
     - GoogleSymbolUtilities (~> 1.0)
   - Hakuba (2.0.3)
+  - HCSStarRatingView (1.4.5)
   - IQKeyboardManagerSwift (4.0.5)
   - JSQMessagesViewController (7.3.4):
     - JSQSystemSoundPlayer (~> 2.0.1)
@@ -83,6 +84,7 @@ DEPENDENCIES:
   - FSCalendar
   - Google/SignIn
   - Hakuba (~> 2.0.3)
+  - HCSStarRatingView
   - IQKeyboardManagerSwift (= 4.0.5)
   - JSQMessagesViewController
   - JVFloatLabeledTextField
@@ -119,6 +121,7 @@ SPEC CHECKSUMS:
   GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
   GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
   Hakuba: 59b87bbaf5c93e838ac8af8cf5d057f16a1213df
+  HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
   IQKeyboardManagerSwift: 41fd3a45a2cdb2a0e031af697708a95b865068a1
   JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
@@ -141,6 +144,6 @@ SPEC CHECKSUMS:
   Valet: b16c837ed1b33586c60d3f852c3a23c2efe5c019
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: c864ee84e1cefb3a8663d4cbedb974617c0f586b
+PODFILE CHECKSUM: 6b873679236c597c75c1b6eb18b75a107a1c602a
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1

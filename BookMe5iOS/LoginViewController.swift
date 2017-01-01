@@ -100,6 +100,12 @@ class LoginViewController: UIViewController {
         })
     }
     
+    @IBAction func connection(sender: AnyObject) {
+        self.displayPrompt().asObservable().subscribe { (event) in
+
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

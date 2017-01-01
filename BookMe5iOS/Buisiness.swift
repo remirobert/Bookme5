@@ -34,6 +34,7 @@ class Buisiness {
     var services: [String]?
     var start: NSDate?
     var end: NSDate?
+    var rating = 0.0
     
     init?(json: JSON) {
         guard let id = json["_id"] as? String else { return nil }
@@ -41,6 +42,7 @@ class Buisiness {
         self.id = id
         self.name = json["name"] as? String ?? ""
         self.description = json["description"] as? String
+        self.rating = json["rating"] as? Double ?? 0
         
         if let picturesJson = json["images"] as? [JSON] {
             self.pictures = picturesJson.flatMap({ (json: JSON) -> String? in

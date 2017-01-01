@@ -134,6 +134,9 @@
                                         <include reference="dnz-xn-9d2"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="connection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiX-gt-8cD"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tVz-xo-jCE">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>

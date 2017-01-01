@@ -123,6 +123,16 @@ class ProfileViewController: UIViewController {
         self.tableview.reloadData()
         self.bindInterface()
     }
+
+    func optionReservation(booking: Reservation) {
+        let alertController = UIAlertController(title: "Options: ", message: nil, preferredStyle: .ActionSheet)
+
+        alertController.addAction(UIAlertAction(title: "Annuler", style: .Destructive, handler: { _ in
+            self.profileViewModel.cancelReservation(booking)
+        }))
+        alertController.addAction(UIAlertAction(title: "Annuler", style: .Cancel, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,6 +166,12 @@ class ProfileViewController: UIViewController {
                     let model = ProfileReservationModel(reservation: reservation)
                     model.selectionHandler = { _ in
                         self.performSegueWithIdentifier("detailService", sender: reservation)
+                    }
+                    model.selectionHandler = { _ in
+                        if self.segmentReservations.selectedSegmentIndex == 1 {
+                            return
+                        }
+                        self.optionReservation(model.reservation)
                     }
                     return model
                 })
