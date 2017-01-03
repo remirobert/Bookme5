@@ -48,7 +48,7 @@ class LoginViewController: UIViewController {
         }
     }()
     
-    private func displayPrompt() -> Observable<Provider> {
+    private func displayPrompt() -> Observable<EmailProvider> {
         return Observable.create({ observer in
             
             let alertController = UIAlertController(title: "Connection", message: "Utilisez votre email et password utilisé lors de l'inscription.", preferredStyle: .Alert)
@@ -57,10 +57,17 @@ class LoginViewController: UIViewController {
                 let loginTextField = alertController.textFields![0] as UITextField
                 let passwordTextField = alertController.textFields![1] as UITextField
                 
-                
-                let provider = EmailProvider(email: loginTextField.text!, password: passwordTextField.text!)
-                observer.onNext(provider)
-                observer.onCompleted()
+                let request = APIBookMe5.LoginWithEmail(email: loginTextField.text ?? "", password: passwordTextField.text ?? "")
+
+                Network.send(request: request, parse: TokenAccess.instanceNewTokenAccess).subscribeNext({ token in
+                    guard let token = token else {
+                        let alertcontroller = UIAlertController(title: "Erreur de connexion", message: nil, preferredStyle: .Alert)
+                        alertcontroller.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                        self.presentViewController(alertcontroller, animated: true, completion: nil)
+                        return
+                    }
+                    self.dismissViewControllerAnimated(true, completion: nil)
+                }).addDisposableTo(self.disposeBag)
             }
             loginAction.enabled = false
             
@@ -102,8 +109,13 @@ class LoginViewController: UIViewController {
     
     @IBAction func connection(sender: AnyObject) {
         self.displayPrompt().asObservable().subscribe { (event) in
-
-        }
+            switch event {
+            case .Next(let tokenRequest):
+                LoginProvider().rx_login(tokenRequest).subscribeNext({ request in
+                }).addDisposableTo(self.disposeBag)
+            default: break
+            }
+        }.addDisposableTo(self.disposeBag)
     }
 
     override func viewDidLoad() {
