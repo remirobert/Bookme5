@@ -28,6 +28,7 @@ class ProfileViewController: UIViewController {
         return joinLoginView
     }()
     
+    @IBOutlet weak var buttonProSpace: UIButton!
     @IBOutlet weak var labelName: UILabel!
     @IBOutlet weak var buttonEditProfile: UIBarButtonItem!
     @IBOutlet weak var tableview: UITableView!
@@ -36,6 +37,10 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var segmentReservations: UISegmentedControl!
     @IBOutlet weak var imageBackgound: UIImageView!
     
+    @IBAction func displayProSpace(sender: AnyObject) {
+        
+    }
+
     private func displayEditionProfile(property: ProfileProperty, content: String?) -> Observable<String> {
         return Observable.create({ observer in
             
@@ -137,6 +142,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.buttonProSpace.hidden = true
         self.imageBackgound.clipsToBounds = true
         self.tableview.tableFooterView = UIView()
         self.tableview.separatorStyle = .None
@@ -243,6 +249,10 @@ extension ProfileViewController {
             }.addDisposableTo(self.disposeBag)
 
         let model = ProfileInfoModel(user: User.sharedInstance)
+        if User.sharedInstance.pro {
+            self.buttonProSpace.hidden = false
+            self.tableview.contentInset = UIEdgeInsetsMake(0, 0, 50, 0)
+        }
         self.labelName.text = "\(model.user.firstName) \(model.user.lastName)"
         self.labelEmail.text = model.user.email
         self.imageViewProfile.pin_setImageFromURL(NSURL(string: model.user.pictureProfileUrl ?? ""))

@@ -17,6 +17,7 @@ class User {
     var lastName: String!
     var pictureProfileUrl: String?
     var email: String?
+    var pro: Bool = false
     
     class var sharedInstance: User {
         struct Static {
@@ -34,7 +35,8 @@ class User {
         guard let firstName = info["firstname"] as? String else { return nil }
         guard let lastName = info["lastname"] as? String else { return nil }
         let pictureUrl = info["pictureProfileUrl"] as? String
-        
+
+        User.sharedInstance.pro = json["isPro"] as? Bool ?? false
         User.sharedInstance.id = json["user_id"] as? String ?? ""
         User.sharedInstance.email = json["email"] as? String
         User.sharedInstance.firstName = firstName
