@@ -23,10 +23,13 @@ enum APIBookMe5 {
     case GetReservations
     case GetService(id: String)
     case GetBookMarks
+    case GetVisit(id: String)
     case PostBookMark(id: String)
     case GetBookMark(id: String)
     case PostStatsVisit(id: String)
     case PostStatsBook(id: String)
+    case GetProBusinesses(id: String)
+    case GetStatisticChart
     case GetGroupeMessage
     case Comment
     case CancelBooking(id: String)
@@ -77,6 +80,8 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/businesses"
         case .SearchBuisiness:
             return "\(self.baseUrl())/businesses/search"
+        case .GetVisit(let id):
+            return "\(self.baseUrl())/statistics/\(id)/visit"
         case .GetServices:
             return "\(self.baseUrl())/services"
         case .GetService(let id):
@@ -99,6 +104,10 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/statistics/\(id)/visit"
         case .GetGroupeMessage:
             return "\(self.baseUrl())/users/group"
+        case .GetProBusinesses(let id):
+            return "\(self.baseUrl())/businesses/owner/\(id)"
+        case .GetStatisticChart:
+            return "\(self.baseUrl())/statistics"
         case .Comment:
             return "http://private-117ddb-bookme1.apiary-mock.com/1/comments"
         case .CancelBooking(let id):
@@ -114,8 +123,11 @@ extension APIBookMe5: NetworkRequest {
              .ServiceIndisponibilities,
              .GetBookMark,
              .GetBookMarks,
+             .GetVisit,
              .GetReservations,
+             .GetStatisticChart,
              .Comment,
+             .GetProBusinesses,
              .GetGroupeMessage,
              .FeedBusinesses:
             return .GET
@@ -138,9 +150,12 @@ extension APIBookMe5: NetworkRequest {
              .BookService,
              .GetService,
              .ServiceIndisponibilities,
+             .GetStatisticChart,
              .GetBookMarks,
              .GetBookMark,
              .PostBookMark,
+             .GetVisit,
+             .GetProBusinesses,
              .GetReservations,
              .PostStatsBook,
              .GetGroupeMessage,

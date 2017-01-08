@@ -18,6 +18,7 @@ PODS:
   - FirebaseInstanceID (1.0.8)
   - FLAnimatedImage (1.0.12)
   - FSCalendar (2.3.1)
+  - FSLineChart (0.1.7)
   - Google/Core (3.0.3):
     - FirebaseAnalytics (~> 3.2)
   - Google/SignIn (3.0.3):
@@ -56,6 +57,8 @@ PODS:
   - PINRemoteImage/FLAnimatedImage (2.1.4):
     - FLAnimatedImage (>= 1.0)
     - PINRemoteImage/Core
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
   - PopupDialog (0.4.0):
     - TZStackView
   - ReachabilitySwift (2.3.3)
@@ -74,6 +77,7 @@ PODS:
   - SwiftMoment (0.5.1)
   - SwiftNotificationCenter (1.0.0)
   - TZStackView (1.2.0)
+  - UICountingLabel (1.2.0)
   - Valet (2.2.2)
   - ZFDragableModalTransition (0.6)
 
@@ -82,6 +86,7 @@ DEPENDENCIES:
   - FBSDKCoreKit (~> 4.10.1)
   - FBSDKLoginKit (~> 4.10.1)
   - FSCalendar
+  - FSLineChart
   - Google/SignIn
   - Hakuba (~> 2.0.3)
   - HCSStarRatingView
@@ -90,6 +95,7 @@ DEPENDENCIES:
   - JVFloatLabeledTextField
   - LGAlertView
   - PINRemoteImage
+  - PNChart
   - PopupDialog
   - ReachabilitySwift
   - RealmSwift
@@ -112,6 +118,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   FSCalendar: 6a68532ec1228e389c3c7274e3410b78702f77b6
+  FSLineChart: 1b8d3727e8feb323144126d381184bf1b15e6efc
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   GoogleAppUtilities: f1730f91f67767b453c289577040dd3f425ffdc7
   GoogleAuthUtilities: d7a19615cd7627688afcf181737f1011ee8b5a23
@@ -129,6 +136,7 @@ SPEC CHECKSUMS:
   LGAlertView: 9a5dcbf4f81b02b718083539d7f222280adc9547
   PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
   PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
   PopupDialog: 5f87c0c97af1cf5f2eee6e5a83421c3fc0d22fb5
   ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
   Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
@@ -141,9 +149,10 @@ SPEC CHECKSUMS:
   SwiftMoment: 469c0734b5d4d6631a15a91f8093cf436c3cbb7c
   SwiftNotificationCenter: 1216530054e23f8b50d45a09a699875fefc01cd9
   TZStackView: 4b82373b4aabe4d99adf739a34e1bc6755149272
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
   Valet: b16c837ed1b33586c60d3f852c3a23c2efe5c019
   ZFDragableModalTransition: 0d294eaaba6edfcb9839595de765f9ca06a4b524
 
-PODFILE CHECKSUM: 6b873679236c597c75c1b6eb18b75a107a1c602a
+PODFILE CHECKSUM: c8c7645259c824740fef263fa97a0f23e7d313a8
 
 COCOAPODS: 1.1.1

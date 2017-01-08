@@ -26,5 +26,7 @@ pod 'IQKeyboardManagerSwift', '4.0.5'
 pod 'Socket.IO-Client-Swift', '~> 7.0.3'
 pod 'JSQMessagesViewController'
 pod 'HCSStarRatingView'
+pod 'FSLineChart'
+pod 'PNChart'
 
 end
