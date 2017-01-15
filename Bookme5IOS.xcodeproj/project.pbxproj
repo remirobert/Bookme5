@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC477264E474E3ABAB8D1CE /* Pods_BookMe5iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A714F85A692ADDD5CD0485A /* Pods_BookMe5iOSTests.framework */; };
 		6B4AFEB9BA4CFDC3AC19D007 /* Pods_BookMe5iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4132C32072469BB7A2592E81 /* Pods_BookMe5iOS.framework */; };
 		BB09E6E61D2F757800BF5707 /* HeaderServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB09E6E51D2F757800BF5707 /* HeaderServicesTableViewCell.xib */; };
 		BB0E12E41CBBF79C006602FE /* BookCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E12E21CBBF79C006602FE /* BookCollectionTableViewCell.swift */; };
@@ -34,10 +35,6 @@
 		BB290B6D1C1476690036E04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB290B6B1C1476690036E04E /* LaunchScreen.storyboard */; };
 		BB290B781C1476690036E04E /* BookMe5iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B771C1476690036E04E /* BookMe5iOSTests.swift */; };
 		BB290B831C14766A0036E04E /* BookMe5iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B821C14766A0036E04E /* BookMe5iOSUITests.swift */; };
-		BB290B941C1476980036E04E /* EmailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B911C1476980036E04E /* EmailProvider.swift */; };
-		BB290B951C1476980036E04E /* FacebookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B921C1476980036E04E /* FacebookProvider.swift */; };
-		BB290B961C1476980036E04E /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B931C1476980036E04E /* LoginProvider.swift */; };
-		BB290B991C14866A0036E04E /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B981C14866A0036E04E /* GoogleProvider.swift */; };
 		BB2B90811E216A240007C47F /* Pro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2B90801E216A240007C47F /* Pro.storyboard */; };
 		BB2B90831E216BD10007C47F /* ListProBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B90821E216BD10007C47F /* ListProBusinessViewController.swift */; };
 		BB2B90851E2170F30007C47F /* DetailStatsBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2B90841E2170F30007C47F /* DetailStatsBusinessViewController.swift */; };
@@ -107,6 +104,17 @@
 		BBB7073E1DC65FD00063222A /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB7073D1DC65FD00063222A /* CommentViewController.swift */; };
 		BBB77E5B1D295333006110B4 /* HeaderDetailBuisinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB77E591D295333006110B4 /* HeaderDetailBuisinessTableViewCell.swift */; };
 		BBB9BE171D81D40A00469808 /* LabelSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB9BE161D81D40A00469808 /* LabelSize.swift */; };
+		BBBC29FF1E2BE3C20086DE08 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A011CBA014100AA5BAD /* Network.swift */; };
+		BBBC2A001E2BE3C20086DE08 /* APIBookMe5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A021CBA014100AA5BAD /* APIBookMe5.swift */; };
+		BBBC2A011E2BE3C20086DE08 /* APIFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F25521C588F3D0054D345 /* APIFeed.swift */; };
+		BBBC2A021E2BE3C20086DE08 /* APILogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF143EF1C55D96200A5C523 /* APILogin.swift */; };
+		BBBC2A031E2BE3C20086DE08 /* APIUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF143F31C5605B900A5C523 /* APIUser.swift */; };
+		BBBC2A041E2BE3C20086DE08 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF143F11C55D96B00A5C523 /* API.swift */; };
+		BBBC2A0B1E2BE3FB0086DE08 /* KeychainSecuredStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFB05E21CBA57060026882C /* KeychainSecuredStorageManager.swift */; };
+		BBBC2A0C1E2BE4150086DE08 /* EmailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B911C1476980036E04E /* EmailProvider.swift */; };
+		BBBC2A0D1E2BE4150086DE08 /* FacebookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B921C1476980036E04E /* FacebookProvider.swift */; };
+		BBBC2A0E1E2BE4150086DE08 /* GoogleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B981C14866A0036E04E /* GoogleProvider.swift */; };
+		BBBC2A0F1E2BE4150086DE08 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB290B931C1476980036E04E /* LoginProvider.swift */; };
 		BBC428C61D7DF927005C9FDA /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC428C51D7DF927005C9FDA /* NotificationViewModel.swift */; };
 		BBC428CC1D7DFC45005C9FDA /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC428CB1D7DFC45005C9FDA /* Bookmark.swift */; };
 		BBC428CF1D7DFDB2005C9FDA /* BookmarkListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC428CD1D7DFDB2005C9FDA /* BookmarkListTableViewCell.xib */; };
@@ -120,6 +128,17 @@
 		BBCC498C1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC498A1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift */; };
 		BBCC498D1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCC498B1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib */; };
 		BBCC498E1E2BDDAD00E733D9 /* FeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F25491C5886460054D345 /* FeedListViewModel.swift */; };
+		BBCC498F1E2BDEF700E733D9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB42387F1C1921720041B45D /* User.swift */; };
+		BBCC49901E2BDEF700E733D9 /* TokenAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF143F51C5608B200A5C523 /* TokenAccess.swift */; };
+		BBCC49911E2BDEF700E733D9 /* Buisiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F25501C58879A0054D345 /* Buisiness.swift */; };
+		BBCC49921E2BDEF700E733D9 /* DetailLocationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB208B571CBB74A7005FAC8D /* DetailLocationCellModel.swift */; };
+		BBCC49931E2BDEF700E733D9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC5704B1D2F8545003D5CDC /* Service.swift */; };
+		BBCC49941E2BDEF700E733D9 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFDAE3C1D6A2D72004D4560 /* Reservation.swift */; };
+		BBCC49951E2BDEF700E733D9 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC428CB1D7DFC45005C9FDA /* Bookmark.swift */; };
+		BBCC49961E2BDEF700E733D9 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB69BB21DC51D7A00D386D8 /* Comment.swift */; };
+		BBCC49971E2BDEF700E733D9 /* GroupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C58831DDE1EBA00BF2A3C /* GroupMessage.swift */; };
+		BBCC49981E2BDEF700E733D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5C58851DDE3A8700BF2A3C /* Message.swift */; };
+		BBCC49991E2BDFD300E733D9 /* FeedListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F254C1C5886E40054D345 /* FeedListTableViewCell.swift */; };
 		BBCE5A001CB9F86B00AA5BAD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE59FF1CB9F86B00AA5BAD /* AppCoordinator.swift */; };
 		BBCE5A031CBA014100AA5BAD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A011CBA014100AA5BAD /* Network.swift */; };
 		BBCE5A041CBA014100AA5BAD /* APIBookMe5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A021CBA014100AA5BAD /* APIBookMe5.swift */; };
@@ -159,9 +178,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1FB3865E3A4F0A455C4F4B /* Pods-BookMe5iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe5iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookMe5iOSTests/Pods-BookMe5iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A714F85A692ADDD5CD0485A /* Pods_BookMe5iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMe5iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFA96F09DB319450CC1F487 /* Pods-BookMe5iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe5iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BookMe5iOS/Pods-BookMe5iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4132C32072469BB7A2592E81 /* Pods_BookMe5iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookMe5iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		472F5A569A76A66609404AF6 /* Pods-BookMe5iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe5iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMe5iOS/Pods-BookMe5iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7EBF6A2921DCDBD4D2EA5939 /* Pods-BookMe5iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookMe5iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BookMe5iOSTests/Pods-BookMe5iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB09E6E51D2F757800BF5707 /* HeaderServicesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderServicesTableViewCell.xib; sourceTree = "<group>"; };
 		BB0E12E21CBBF79C006602FE /* BookCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionTableViewCell.swift; sourceTree = "<group>"; };
 		BB0E12E31CBBF79C006602FE /* BookCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionTableViewCell.xib; sourceTree = "<group>"; };
@@ -315,6 +337,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC477264E474E3ABAB8D1CE /* Pods_BookMe5iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +356,7 @@
 			children = (
 				C720BB3668FF763F029F31BE /* Pods.framework */,
 				4132C32072469BB7A2592E81 /* Pods_BookMe5iOS.framework */,
+				2A714F85A692ADDD5CD0485A /* Pods_BookMe5iOSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -623,6 +647,8 @@
 			children = (
 				3CFA96F09DB319450CC1F487 /* Pods-BookMe5iOS.debug.xcconfig */,
 				472F5A569A76A66609404AF6 /* Pods-BookMe5iOS.release.xcconfig */,
+				1E1FB3865E3A4F0A455C4F4B /* Pods-BookMe5iOSTests.debug.xcconfig */,
+				7EBF6A2921DCDBD4D2EA5939 /* Pods-BookMe5iOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -654,9 +680,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB290B8A1C14766A0036E04E /* Build configuration list for PBXNativeTarget "BookMe5iOSTests" */;
 			buildPhases = (
+				14A2A8E574A3171AE6DA4924 /* [CP] Check Pods Manifest.lock */,
 				BB290B6F1C1476690036E04E /* Sources */,
 				BB290B701C1476690036E04E /* Frameworks */,
 				BB290B711C1476690036E04E /* Resources */,
+				DC485F0AEC9C8B05100D7770 /* [CP] Embed Pods Frameworks */,
+				D28C08EE5E2FAFE0212583BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -793,6 +822,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14A2A8E574A3171AE6DA4924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		680E5BE574746ECF89FB2188 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -808,6 +852,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookMe5iOS/Pods-BookMe5iOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D28C08EE5E2FAFE0212583BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookMe5iOSTests/Pods-BookMe5iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DAB91F76856BE31D51F25A25 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -821,6 +880,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC485F0AEC9C8B05100D7770 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BookMe5iOSTests/Pods-BookMe5iOSTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED7F4E92C38660C019BFB5DD /* [CP] Copy Pods Resources */ = {
@@ -854,6 +928,7 @@
 				BB41ADA31D57A7E0002067C5 /* HeaderDetailBookingView.swift in Sources */,
 				BB2B90851E2170F30007C47F /* DetailStatsBusinessViewController.swift in Sources */,
 				BB7A84FF1C59D4B80079F656 /* SignupViewController.swift in Sources */,
+				BBBC2A0C1E2BE4150086DE08 /* EmailProvider.swift in Sources */,
 				BBC428D01D7DFDB2005C9FDA /* BookmarkListTableViewCell.swift in Sources */,
 				BB4B82DD1D2F8E9200FE2B33 /* DetailServiceViewController.swift in Sources */,
 				BBCE5A001CB9F86B00AA5BAD /* AppCoordinator.swift in Sources */,
@@ -871,21 +946,17 @@
 				BB0F25511C58879A0054D345 /* Buisiness.swift in Sources */,
 				BB41A8A71C956C00007B99A0 /* MessageViewController.swift in Sources */,
 				BBCC498C1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift in Sources */,
-				BB290B941C1476980036E04E /* EmailProvider.swift in Sources */,
-				BB290B961C1476980036E04E /* LoginProvider.swift in Sources */,
 				BBC428C61D7DF927005C9FDA /* NotificationViewModel.swift in Sources */,
 				BB7837351CBC840D00362518 /* SearchViewController.swift in Sources */,
 				BB6500D61C75742B00A45025 /* DetailBuisinessViewController.swift in Sources */,
 				BB672A321D7C219400C098BF /* ProfileHeaderSelector.swift in Sources */,
 				BB9651371D57257100A3F83E /* ServiceDescriptionTableViewCell.swift in Sources */,
-				BB290B991C14866A0036E04E /* GoogleProvider.swift in Sources */,
 				BBB69BB31DC51D7A00D386D8 /* Comment.swift in Sources */,
 				BBCE5A041CBA014100AA5BAD /* APIBookMe5.swift in Sources */,
 				BB0E12E41CBBF79C006602FE /* BookCollectionTableViewCell.swift in Sources */,
 				BB41ADA01D57A474002067C5 /* DetailBookingLocationTableViewCell.swift in Sources */,
 				BBAF69981DDE484C00FC1C4B /* GroupMessageTableViewCell.swift in Sources */,
 				BBB69BB61DC5284600D386D8 /* CommentCellTableViewCell.swift in Sources */,
-				BB290B951C1476980036E04E /* FacebookProvider.swift in Sources */,
 				BB7A85011C59D5780079F656 /* SignupViewModel.swift in Sources */,
 				BBD847A81CEE94C7007AF7F1 /* SearchViewModel.swift in Sources */,
 				BBCB980D1D6CDF69000EB8DD /* DetailReservationViewModel.swift in Sources */,
@@ -924,10 +995,13 @@
 				BBF143F01C55D96200A5C523 /* APILogin.swift in Sources */,
 				BB208B551CBB71B3005FAC8D /* DetailLocationTableViewCell.swift in Sources */,
 				BBF143F21C55D96B00A5C523 /* API.swift in Sources */,
+				BBBC2A0F1E2BE4150086DE08 /* LoginProvider.swift in Sources */,
 				BB41AD9C1D57A2BD002067C5 /* DetailBookingDetailTableViewCell.swift in Sources */,
 				BB3617D51D296E1400D7519B /* PictureDetailTableViewCell.swift in Sources */,
+				BBBC2A0D1E2BE4150086DE08 /* FacebookProvider.swift in Sources */,
 				BBA1ED881D440D6F00F79116 /* BookCalendarViewModel.swift in Sources */,
 				BBA1471C1DDFABF000D849D3 /* MessageViewModel.swift in Sources */,
+				BBBC2A0E1E2BE4150086DE08 /* GoogleProvider.swift in Sources */,
 				BBC5704C1D2F8545003D5CDC /* Service.swift in Sources */,
 				BB4238801C1921720041B45D /* User.swift in Sources */,
 				BB6500D41C75741E00A45025 /* DetailBuisinessViewModel.swift in Sources */,
@@ -942,8 +1016,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCC49971E2BDEF700E733D9 /* GroupMessage.swift in Sources */,
+				BBBC2A041E2BE3C20086DE08 /* API.swift in Sources */,
+				BBBC2A021E2BE3C20086DE08 /* APILogin.swift in Sources */,
 				BBCC498E1E2BDDAD00E733D9 /* FeedListViewModel.swift in Sources */,
+				BBCC49931E2BDEF700E733D9 /* Service.swift in Sources */,
+				BBBC2A001E2BE3C20086DE08 /* APIBookMe5.swift in Sources */,
 				BB290B781C1476690036E04E /* BookMe5iOSTests.swift in Sources */,
+				BBCC49911E2BDEF700E733D9 /* Buisiness.swift in Sources */,
+				BBBC2A031E2BE3C20086DE08 /* APIUser.swift in Sources */,
+				BBBC2A011E2BE3C20086DE08 /* APIFeed.swift in Sources */,
+				BBCC498F1E2BDEF700E733D9 /* User.swift in Sources */,
+				BBCC49961E2BDEF700E733D9 /* Comment.swift in Sources */,
+				BBCC49901E2BDEF700E733D9 /* TokenAccess.swift in Sources */,
+				BBBC2A0B1E2BE3FB0086DE08 /* KeychainSecuredStorageManager.swift in Sources */,
+				BBCC49941E2BDEF700E733D9 /* Reservation.swift in Sources */,
+				BBCC49981E2BDEF700E733D9 /* Message.swift in Sources */,
+				BBCC49921E2BDEF700E733D9 /* DetailLocationCellModel.swift in Sources */,
+				BBCC49991E2BDFD300E733D9 /* FeedListTableViewCell.swift in Sources */,
+				BBBC29FF1E2BE3C20086DE08 /* Network.swift in Sources */,
+				BBCC49951E2BDEF700E733D9 /* Bookmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1105,24 +1197,30 @@
 		};
 		BB290B8B1C14766A0036E04E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1FB3865E3A4F0A455C4F4B /* Pods-BookMe5iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BookMe5iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.BookMe5iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookMe5iOS.app/BookMe5iOS";
 			};
 			name = Debug;
 		};
 		BB290B8C1C14766A0036E04E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBF6A2921DCDBD4D2EA5939 /* Pods-BookMe5iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BookMe5iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remirobert.BookMe5iOSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookMe5iOS.app/BookMe5iOS";
 			};
 			name = Release;

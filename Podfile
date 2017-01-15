@@ -35,4 +35,13 @@ target 'BookMe5iOSTests' do
     pod 'RxCocoa'
     pod 'RxBlocking'
     pod 'Alamofire'
+    pod 'SwiftMoment'
+    pod 'RealmSwift'
+    pod 'PopupDialog'
+    pod 'HCSStarRatingView'
+    pod 'FSLineChart'
+    pod 'PNChart'
+    pod 'PINRemoteImage'
+    pod 'Hakuba', '~> 2.0.3'
+    pod 'Valet'
 end

@@ -13,7 +13,7 @@ import RxCocoa
 import Hakuba
 import ZFDragableModalTransition
 
-class FeedListViewController: UIViewController {
+class FeedListViewController: UIViewController, MapViewServicesDelegate {
     
     private var hakuba: Hakuba!
     private let feedListViewModel = FeedListViewModel()
@@ -44,9 +44,15 @@ class FeedListViewController: UIViewController {
         mapView.frame.size.height = 250
         self.tableView.tableHeaderView = self.tableView.tableHeaderView
     }
+
+    func didSelectView(b: Buisiness) {
+        self.performSegueWithIdentifier(FeedListViewController.Segue.detailBuisinessSegue.identifier!, sender: b)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.mapView.delegate = self
         
         self.hakuba = Hakuba(tableView: self.tableView)
         self.hakuba.registerCellByNib(FeedListTableViewCell)

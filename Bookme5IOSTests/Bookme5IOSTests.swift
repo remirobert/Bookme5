@@ -7,9 +7,12 @@
 //
 
 import XCTest
-@testable import BookMe5iOS
+import RxSwift
 
 class BookMe5iOSTests: XCTestCase {
+
+    private let disposeBag = DisposeBag()
+    private let viewmodel = FeedListViewModel()
     
     override func setUp() {
         super.setUp()
@@ -21,13 +24,17 @@ class BookMe5iOSTests: XCTestCase {
     
     func testFeedBusiness() {
         var endRequest = false
-        let viewmodel = FeedListViewModel()
+
+        viewmodel.buisiness.asObservable().subscribeNext { models in
+            print("models : \(models.count)")
+            XCTAssertTrue(models.count > 0)
+            endRequest = true
+        }.addDisposableTo(self.disposeBag)
 
         viewmodel.fetchFeedList()
 
-
         while (!endRequest) {
-            CFRunLoopRunInMode(CFRunLoopMode.defaultMode, 0.01, true)
+            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, true)
         }
     }    
 }

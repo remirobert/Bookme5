@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+protocol MapViewServicesDelegate: class {
+    func didSelectView(b: Buisiness)
+}
+
 class PointMapModel: NSObject, MKAnnotation {
 
     var title: String?
@@ -27,6 +31,8 @@ class PointMapModel: NSObject, MKAnnotation {
 class MapViewServices: UIView, MKMapViewDelegate {
 
     @IBOutlet weak var mapview: MKMapView!
+
+    weak var delegate: MapViewServicesDelegate?
 
     private var points: [PointMapModel]? {
         didSet {
@@ -61,5 +67,12 @@ class MapViewServices: UIView, MKMapViewDelegate {
         pinView?.canShowCallout = false
         pinView?.image = UIImage(named: "pin")
         return pinView
+    }
+
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        guard let annotation = view.annotation as? PointMapModel else {
+            return
+        }
+        self.delegate?.didSelectView(annotation.buisiness)
     }
 }
