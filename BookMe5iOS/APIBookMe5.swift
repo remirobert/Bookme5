@@ -26,9 +26,11 @@ enum APIBookMe5 {
     case GetVisit(id: String)
     case PostBookMark(id: String)
     case GetBookMark(id: String)
+    case GetReviews(id: String)
     case PostStatsVisit(id: String)
     case PostStatsBook(id: String)
     case GetProBusinesses(id: String)
+    case GetBookings(id: String)
     case GetStatisticChart
     case GetGroupeMessage
     case Comment
@@ -98,6 +100,8 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/bookmarks/\(id)/get"
         case .PostBookMark(let id):
             return "\(self.baseUrl())/bookmarks/\(id)"
+        case .GetReviews(let id):
+            return "\(self.baseUrl())/reviews/\(id)"
         case .PostStatsBook(let id):
             return "\(self.baseUrl())/statistics/\(id)/booking"
         case .PostStatsVisit(let id):
@@ -106,6 +110,8 @@ extension APIBookMe5: NetworkRequest {
             return "\(self.baseUrl())/users/group"
         case .GetProBusinesses(let id):
             return "\(self.baseUrl())/businesses/owner/\(id)"
+        case .GetBookings(let id):
+            return "\(self.baseUrl())/businesses/\(id)/bookings"
         case .GetStatisticChart:
             return "\(self.baseUrl())/statistics"
         case .Comment:
@@ -125,8 +131,10 @@ extension APIBookMe5: NetworkRequest {
              .GetBookMarks,
              .GetVisit,
              .GetReservations,
+             .GetReviews,
              .GetStatisticChart,
              .Comment,
+             .GetBookings,
              .GetProBusinesses,
              .GetGroupeMessage,
              .FeedBusinesses:

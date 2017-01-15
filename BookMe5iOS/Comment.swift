@@ -13,16 +13,19 @@ struct Comment {
     var content: String?
     var author: String?
     var date: NSDate?
+    var mark: Int?
     
     init?(json: JSON) {
-        guard let content = json["content"] as? String,
-            let author = json["author"] as? String,
-            let dateString = json["published_at"] as? String else {
+        guard let content = json["comment"] as? String,
+            let dateString = json["date"] as? String else {
                 return nil
         }
-        
+
+        if let user = json["user"] as? JSON {
+            self.author = user["name"] as? String
+        }
+        self.mark = json["mark"] as? Int
         self.content = content
-        self.author = author
         if let moment = moment(dateString) {
             self.date = moment.date
         }

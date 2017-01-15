@@ -8,6 +8,7 @@
 
 import UIKit
 import Hakuba
+import HCSStarRatingView
 
 class CommentCellModel: CellModel {
     
@@ -25,6 +26,7 @@ class CommentCellTableViewCell: Cell, CellType {
     
     @IBOutlet weak var labelContent: UILabel!
     @IBOutlet weak var labelAuthor: UILabel!
+    @IBOutlet weak var ratingView: HCSStarRatingView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,7 +39,13 @@ class CommentCellTableViewCell: Cell, CellType {
         let comment = cellmodel.comment
         self.labelContent.text = comment.content
         self.labelAuthor.text = "De \(comment.author ?? "")"
-        
+        self.ratingView.hidden = true
+
+        if let mark = comment.mark {
+            self.ratingView.value = CGFloat(mark)
+            self.ratingView.hidden = false
+        }
+
         cellmodel.height = heightForView(comment.content ?? "", width: UIScreen.mainScreen().bounds.size.width) + 25
     }
 }

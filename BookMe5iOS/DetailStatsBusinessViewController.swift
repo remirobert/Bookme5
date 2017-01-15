@@ -75,6 +75,16 @@ class DetailStatsBusinessViewController: UIViewController {
         model.location = self.business?.location
         self.hakuba[0].append(model)
 
+
+        let requestBookings = APIBookMe5.GetBookings(id: self.business.id)
+        Network.send(request: requestBookings, debug: true).subscribeNext { response in
+            guard let response = response else {
+                return
+            }
+            print(response)
+            print(response)
+            }.addDisposableTo(self.disposeBag)
+
         let request = APIBookMe5.GetStatisticChart
         Network.send(request: request, debug: true).subscribeNext { response in
             guard let response = response else {
@@ -88,7 +98,7 @@ class DetailStatsBusinessViewController: UIViewController {
             }).filter({ stat -> Bool in
                 return stat.owner == self.business.id
             }).first
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
 
         self.stat.asObservable().subscribeNext { stat in
             guard let stat = stat else {
@@ -97,6 +107,6 @@ class DetailStatsBusinessViewController: UIViewController {
             let model = ChartTableViewCellModel(content: stat)
             self.hakuba[0].append(model)
             self.tableview.reloadData()
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
     }
 }

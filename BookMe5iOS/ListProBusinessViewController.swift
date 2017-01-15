@@ -14,6 +14,12 @@ class ListProBusinessViewController: UITableViewController {
     private let disposeBag = DisposeBag()
     private var business = Variable<[Buisiness]>([])
 
+    @IBOutlet weak var dismiss: UIBarButtonItem!
+
+    @IBAction func dismiss(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -132,7 +132,11 @@ class ProfileViewController: UIViewController {
     func optionReservation(booking: Reservation) {
         let alertController = UIAlertController(title: "Options: ", message: nil, preferredStyle: .ActionSheet)
 
-        alertController.addAction(UIAlertAction(title: "Annuler", style: .Destructive, handler: { _ in
+        alertController.addAction(UIAlertAction(title: "Détail", style: .Default, handler: { _ in
+            self.performSegueWithIdentifier("detailService", sender: booking)
+        }))
+
+        alertController.addAction(UIAlertAction(title: "Annuler la reservation", style: .Destructive, handler: { _ in
             self.profileViewModel.cancelReservation(booking)
         }))
         alertController.addAction(UIAlertAction(title: "Annuler", style: .Cancel, handler: nil))

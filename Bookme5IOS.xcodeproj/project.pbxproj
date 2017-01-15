@@ -117,6 +117,9 @@
 		BBC570521D2F88DE003D5CDC /* ServiceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC570501D2F88DE003D5CDC /* ServiceTableViewCell.xib */; };
 		BBCB980B1D6CDF3B000EB8DD /* DetailReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB980A1D6CDF3B000EB8DD /* DetailReservationViewController.swift */; };
 		BBCB980D1D6CDF69000EB8DD /* DetailReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCB980C1D6CDF69000EB8DD /* DetailReservationViewModel.swift */; };
+		BBCC498C1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCC498A1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift */; };
+		BBCC498D1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCC498B1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib */; };
+		BBCC498E1E2BDDAD00E733D9 /* FeedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0F25491C5886460054D345 /* FeedListViewModel.swift */; };
 		BBCE5A001CB9F86B00AA5BAD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE59FF1CB9F86B00AA5BAD /* AppCoordinator.swift */; };
 		BBCE5A031CBA014100AA5BAD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A011CBA014100AA5BAD /* Network.swift */; };
 		BBCE5A041CBA014100AA5BAD /* APIBookMe5.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCE5A021CBA014100AA5BAD /* APIBookMe5.swift */; };
@@ -275,6 +278,8 @@
 		BBC570501D2F88DE003D5CDC /* ServiceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceTableViewCell.xib; sourceTree = "<group>"; };
 		BBCB980A1D6CDF3B000EB8DD /* DetailReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailReservationViewController.swift; sourceTree = "<group>"; };
 		BBCB980C1D6CDF69000EB8DD /* DetailReservationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailReservationViewModel.swift; sourceTree = "<group>"; };
+		BBCC498A1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingStateTableViewCell.swift; sourceTree = "<group>"; };
+		BBCC498B1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingStateTableViewCell.xib; sourceTree = "<group>"; };
 		BBCE59FF1CB9F86B00AA5BAD /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BBCE5A011CBA014100AA5BAD /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		BBCE5A021CBA014100AA5BAD /* APIBookMe5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBookMe5.swift; sourceTree = "<group>"; };
@@ -509,6 +514,8 @@
 				BB9651361D57257100A3F83E /* ServiceDescriptionTableViewCell.xib */,
 				BB2B90861E2186E60007C47F /* ChartTableViewCell.swift */,
 				BB2B90871E2186E60007C47F /* ChartTableViewCell.xib */,
+				BBCC498A1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift */,
+				BBCC498B1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib */,
 			);
 			name = DetailService;
 			sourceTree = "<group>";
@@ -757,6 +764,7 @@
 				BB208B521CBB58D8005FAC8D /* HeaderDetailView.xib in Resources */,
 				BBB69BB71DC5284600D386D8 /* CommentCellTableViewCell.xib in Resources */,
 				BB88C8801CBB8A85007AAC51 /* DetailDescriptionTableViewCell.xib in Resources */,
+				BBCC498D1E2BCE7D00E733D9 /* BookingStateTableViewCell.xib in Resources */,
 				BBC570521D2F88DE003D5CDC /* ServiceTableViewCell.xib in Resources */,
 				BB9651301D57255800A3F83E /* ServicePictureTableViewCell.xib in Resources */,
 				BB41A8AD1C957273007B99A0 /* MapViewServices.xib in Resources */,
@@ -862,6 +870,7 @@
 				BB3617D11D29626300D7519B /* DescriptionTableViewCell.swift in Sources */,
 				BB0F25511C58879A0054D345 /* Buisiness.swift in Sources */,
 				BB41A8A71C956C00007B99A0 /* MessageViewController.swift in Sources */,
+				BBCC498C1E2BCE7D00E733D9 /* BookingStateTableViewCell.swift in Sources */,
 				BB290B941C1476980036E04E /* EmailProvider.swift in Sources */,
 				BB290B961C1476980036E04E /* LoginProvider.swift in Sources */,
 				BBC428C61D7DF927005C9FDA /* NotificationViewModel.swift in Sources */,
@@ -933,6 +942,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBCC498E1E2BDDAD00E733D9 /* FeedListViewModel.swift in Sources */,
 				BB290B781C1476690036E04E /* BookMe5iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

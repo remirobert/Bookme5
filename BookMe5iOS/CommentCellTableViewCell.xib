@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -16,7 +16,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbB-fI-Rx1">
-                        <rect key="frame" x="8" y="33" width="304" height="16"/>
+                        <rect key="frame" x="8" y="33" width="209" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="8eR-YS-Svd"/>
                         </constraints>
@@ -30,13 +30,30 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLa-eI-jDG" customClass="HCSStarRatingView">
+                        <rect key="frame" x="225" y="33" width="87" height="8.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.98039215690000003" green="0.73725490199999999" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="VLa-eI-jDG" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="7R5-1G-cML"/>
+                    <constraint firstItem="VLa-eI-jDG" firstAttribute="top" secondItem="N0b-rB-HLZ" secondAttribute="bottom" constant="4" id="984-ZE-QVw"/>
                     <constraint firstItem="SbB-fI-Rx1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JDs-GB-iON"/>
                     <constraint firstAttribute="bottomMargin" secondItem="SbB-fI-Rx1" secondAttribute="bottom" constant="-7.5" id="Med-iA-0UR"/>
+                    <constraint firstItem="VLa-eI-jDG" firstAttribute="leading" secondItem="SbB-fI-Rx1" secondAttribute="trailing" constant="8" id="diq-V0-Fjv"/>
                     <constraint firstItem="N0b-rB-HLZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="eM0-h8-L8J"/>
-                    <constraint firstItem="SbB-fI-Rx1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="j8I-bn-7hL"/>
+                    <constraint firstItem="SbB-fI-Rx1" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-95" id="j8I-bn-7hL"/>
                     <constraint firstItem="N0b-rB-HLZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ju9-KK-zBH"/>
+                    <constraint firstItem="VLa-eI-jDG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="la8-CR-eaO"/>
                     <constraint firstItem="N0b-rB-HLZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ogB-LA-NU9"/>
                     <constraint firstItem="SbB-fI-Rx1" firstAttribute="top" secondItem="N0b-rB-HLZ" secondAttribute="bottom" constant="4" id="zaf-I3-CES"/>
                 </constraints>
@@ -44,6 +61,7 @@
             <connections>
                 <outlet property="labelAuthor" destination="SbB-fI-Rx1" id="GjA-ni-sXK"/>
                 <outlet property="labelContent" destination="N0b-rB-HLZ" id="fTK-uM-SDq"/>
+                <outlet property="ratingView" destination="VLa-eI-jDG" id="zxh-wz-i2x"/>
             </connections>
             <point key="canvasLocation" x="340" y="286"/>
         </tableViewCell>

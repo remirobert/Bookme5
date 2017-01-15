@@ -109,19 +109,33 @@ class DetailBuisinessViewModel: NSObject {
         let model = PictureDetailCellViewModel(image: image)
         self.cellModels.append(model)
     }
-    
-    private func getComments() {
-        let request = APIBookMe5.Comment
-        Network.send(request: request).subscribeNext { response in
-            print("response comments : \(response)")
-            guard let response = response?["objects"] as? [JSON] else {
+
+    private func getReviews() {
+        Network.send(request: APIBookMe5.GetReviews(id: self.buisiness?.id ?? ""), debug: true).subscribeNext { response in
+            guard let response = response else {
                 return
             }
-            self.comments.value = response.map({ commentJson -> Comment? in
+            guard let comments = response["objects"] as? [JSON] else {
+                return
+            }
+            self.comments.value = comments.map({ commentJson -> Comment? in
                 return Comment(json: commentJson)
             }).flatMap({ $0 })
-            print("comments : \(self.comments.value)")
         }.addDisposableTo(self.disposeBag)
+    }
+    
+    private func getComments() {
+        self.getReviews()
+
+//        let request = APIBookMe5.Comment
+//        Network.send(request: request).subscribeNext { response in
+//            guard let response = response?["objects"] as? [JSON] else {
+//                return
+//            }
+//            self.comments.value = response.map({ commentJson -> Comment? in
+//                return Comment(json: commentJson)
+//            }).flatMap({ $0 })
+//        }.addDisposableTo(self.disposeBag)
     }
     
     func initModels() {

@@ -40,7 +40,17 @@ class DetailBookViewModel {
         guard let service = self.service, let buisiness = self.buisiness else {
             return
         }
-        
+
+        guard let date = service.date else {
+            return
+        }
+
+        let notification = UILocalNotification()
+        notification.fireDate = date
+        notification.alertBody = "Rappel réservation : \(service.title ?? "")"
+        notification.timeZone = NSTimeZone.defaultTimeZone()
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+
 //        let reservation = Reservation()
 //        reservation.businessId = buisiness.id
 //        reservation.date = self.date
