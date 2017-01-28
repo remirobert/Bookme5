@@ -10,6 +10,7 @@
 		0CC477264E474E3ABAB8D1CE /* Pods_BookMe5iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A714F85A692ADDD5CD0485A /* Pods_BookMe5iOSTests.framework */; };
 		6B4AFEB9BA4CFDC3AC19D007 /* Pods_BookMe5iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4132C32072469BB7A2592E81 /* Pods_BookMe5iOS.framework */; };
 		BB09E6E61D2F757800BF5707 /* HeaderServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB09E6E51D2F757800BF5707 /* HeaderServicesTableViewCell.xib */; };
+		BB0E0BCA1E3A5CCF008B088D /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD847A71CEE94C7007AF7F1 /* SearchViewModel.swift */; };
 		BB0E12E41CBBF79C006602FE /* BookCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E12E21CBBF79C006602FE /* BookCollectionTableViewCell.swift */; };
 		BB0E12E51CBBF79C006602FE /* BookCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB0E12E31CBBF79C006602FE /* BookCollectionTableViewCell.xib */; };
 		BB0E12E81CBBF9CD006602FE /* DetailThumbServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E12E61CBBF9CD006602FE /* DetailThumbServiceCollectionViewCell.swift */; };
@@ -81,6 +82,7 @@
 		BB7A85011C59D5780079F656 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7A85001C59D5780079F656 /* SignupViewModel.swift */; };
 		BB88C87F1CBB8A85007AAC51 /* DetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB88C87D1CBB8A85007AAC51 /* DetailDescriptionTableViewCell.swift */; };
 		BB88C8801CBB8A85007AAC51 /* DetailDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB88C87E1CBB8A85007AAC51 /* DetailDescriptionTableViewCell.xib */; };
+		BB89DC821E3A5EF40054087C /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2222B11D3BDD9500CCE50D /* SearchResultTableViewCell.swift */; };
 		BB96512F1D57255800A3F83E /* ServicePictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB96512D1D57255800A3F83E /* ServicePictureTableViewCell.swift */; };
 		BB9651301D57255800A3F83E /* ServicePictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB96512E1D57255800A3F83E /* ServicePictureTableViewCell.xib */; };
 		BB9651331D57256500A3F83E /* ServiceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9651311D57256500A3F83E /* ServiceInfoTableViewCell.swift */; };
@@ -1028,9 +1030,11 @@
 				BBBC2A011E2BE3C20086DE08 /* APIFeed.swift in Sources */,
 				BBCC498F1E2BDEF700E733D9 /* User.swift in Sources */,
 				BBCC49961E2BDEF700E733D9 /* Comment.swift in Sources */,
+				BB89DC821E3A5EF40054087C /* SearchResultTableViewCell.swift in Sources */,
 				BBCC49901E2BDEF700E733D9 /* TokenAccess.swift in Sources */,
 				BBBC2A0B1E2BE3FB0086DE08 /* KeychainSecuredStorageManager.swift in Sources */,
 				BBCC49941E2BDEF700E733D9 /* Reservation.swift in Sources */,
+				BB0E0BCA1E3A5CCF008B088D /* SearchViewModel.swift in Sources */,
 				BBCC49981E2BDEF700E733D9 /* Message.swift in Sources */,
 				BBCC49921E2BDEF700E733D9 /* DetailLocationCellModel.swift in Sources */,
 				BBCC49991E2BDFD300E733D9 /* FeedListTableViewCell.swift in Sources */,

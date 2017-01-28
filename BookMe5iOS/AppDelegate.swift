@@ -11,7 +11,7 @@ import FBSDKCoreKit
 import IQKeyboardManagerSwift
 import SocketIO
 
-let socket = SocketIOClient(socketURL: NSURL(string: "https://api.bookme5.com/api:3000")!, config: [
+let socket = SocketIOClient(socketURL: NSURL(string: "http://api.bookme5.com:3000")!, config: [
     .Log(true),
     .Reconnects(true),
     .ForcePolling(true),

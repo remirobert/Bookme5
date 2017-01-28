@@ -13,6 +13,7 @@ class BookMe5iOSTests: XCTestCase {
 
     private let disposeBag = DisposeBag()
     private let viewmodel = FeedListViewModel()
+    private let searchViewModel = SearchViewModel()
     
     override func setUp() {
         super.setUp()
@@ -36,5 +37,20 @@ class BookMe5iOSTests: XCTestCase {
         while (!endRequest) {
             CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, true)
         }
-    }    
+    }
+
+    func testSearch() {
+        var endRequest = false
+
+        searchViewModel.searchResult.asObservable().subscribeNext { models in
+            XCTAssertTrue(models.count > 0)
+            endRequest = true
+        }.addDisposableTo(self.disposeBag)
+        searchViewModel.search("restaurant")
+
+
+        while (!endRequest) {
+            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 0.01, true)
+        }
+    }
 }

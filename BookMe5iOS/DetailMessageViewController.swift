@@ -128,12 +128,12 @@ extension DetailMessageViewController {
             "message": text
         ])
 
-        var message = Message(json: [:])
-        message.userId = User.sharedInstance.id
-        message.content = text
-        message.userName = User.sharedInstance.firstName
-        self.viewModel.addMessage(message)
-        self.collectionView.reloadData()
-        self.scrollToBottomAnimated(true)
+//        var message = Message(json: [:])
+//        message.userId = User.sharedInstance.id
+//        message.content = text
+//        message.userName = User.sharedInstance.firstName
+//        self.viewModel.addMessage(message)
+//        self.collectionView.reloadData()
+//        self.scrollToBottomAnimated(true)
     }
 }

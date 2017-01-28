@@ -15,15 +15,15 @@ class APIUser {
     private class var path: String {
         return "/users"
     }
-    
+
     class func user(tokenAccess: String) -> Request {
         let url = API.baseUrl + self.path + "/info"
         let headers: [String: String] = ["Authorization": "Bearer \(tokenAccess)"]
-        
+
         return Alamofire.request(.GET, url, parameters: nil, encoding: ParameterEncoding.JSON,
-            headers: headers)
+                                 headers: headers)
     }
-    
+
     class func updateInfos(tokenAccess: String, user: User) -> Request {
         let url = API.baseUrl + self.path + "/profile"
         let headers: [String: String] = ["Authorization": "Bearer \(tokenAccess)"]
@@ -34,22 +34,29 @@ class APIUser {
         if let lastName = user.lastName {
             parameters["lastname"] = lastName
         }
-        
+
         print("parameters : \(parameters)")
-        
+
         return Alamofire.request(.PUT, url, parameters: parameters, encoding: ParameterEncoding.JSON, headers: headers)
     }
-    
+
     class func signupUser(email: String, firstName: String, lastName: String, password: String) -> Request {
         let url = API.baseUrl + self.path + "/"
-        
         let parameters = [
             "email": email,
             "firstname": firstName,
             "lastname": lastName,
-            "password": password
+            "password": password,
+            "addresses":
+                [
+                    [
+                        "country": "ffds",
+                        "city": "fds",
+                        "addr": "fd",
+                        "primary": "0"
+                    ]
+            ]
         ]
-        
-        return Alamofire.request(.POST, url, parameters: parameters, encoding: ParameterEncoding.JSON, headers: nil)
+        return Alamofire.request(.POST, url, parameters: parameters as? [String : AnyObject], encoding: ParameterEncoding.JSON, headers: nil)
     }
 }

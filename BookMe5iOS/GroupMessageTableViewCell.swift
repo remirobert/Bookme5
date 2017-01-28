@@ -35,6 +35,6 @@ class GroupMessageTableViewCell: Cell, CellType {
         }
         let group = cellmodel.group
         self.labelMessageCount.text = "\(group.messages.count)"
-        self.labelNameBusiness.text = "\(group.business?.description)"
+        self.labelNameBusiness.text = "\(group.business?.description ?? "")"
     }
 }

@@ -18,7 +18,7 @@ enum APIResponse {
 class API {
     
     static var baseUrl: String {
-        return "http://127.0.0.1:4242/api"
+        return "https://api.bookme5.com/api:4242"
     }
     
     class func responseFrom(request: Request) -> Observable<APIResponse> {

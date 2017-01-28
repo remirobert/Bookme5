@@ -46,7 +46,7 @@ class Buisiness {
         
         if let picturesJson = json["images"] as? [JSON] {
             self.pictures = picturesJson.flatMap({ (json: JSON) -> String? in
-                return json["url"] as? String
+                return "https://api.bookme5.com\(json["url"] as? String ?? "")"
             })
         }
         if let locationJson = json["location"] as? JSON {
